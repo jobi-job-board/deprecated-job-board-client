@@ -1,0 +1,86 @@
+//Font Import
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
+
+// Custom Font
+@font-face {
+    font-family: "gorditaBold";
+    src: local("gorditaBold"),
+        url("../fonts/gorditaBold.otf")format("truetype");
+}
+
+@font-face {
+    font-family: "gorditaLight";
+    src: local("gorditaLight"),
+        url("../fonts/gorditaLight.otf")format("truetype");
+}
+
+@font-face {
+    font-family: "gorditaRegular";
+    src: local("gorditaRegular"),
+        url("../fonts/gorditaRegular.otf")format("truetype");
+}
+
+//Font Families
+@mixin garamondBold {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+}
+
+@mixin garamondLight {
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+}
+
+@mixin gorditaBold {
+    font-family: 'gorditaBlack', serif;
+    font-weight: 700;
+}
+
+// @mixin gorditaLight {
+//     font-family: 'EB Garamond', serif;
+//     font-weight: 300;
+// }
+
+//Font Size
+$title: 90px;
+$secondaryTitle: 85px;
+$tertiaryTitle: 72px;
+$body: 24px;
+$footerHeading: 36px;
+
+/*Convert to Rem*/
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: calc($sizeValue/16) * 1rem;
+}
+
+h1 {
+    @include fontSize(90);
+}
+
+h2 {
+    @include fontSize(85);
+}
+
+h3 {
+    @include fontSize(72);
+}
+
+h4 {
+    @include fontSize(24);
+}
+
+p,
+button,
+nav {
+    @include fontSize(36);
+}
+
+//Colour Palette
+$darkGreen: #254135;
+$black: #0f1620;
+$green: #31795A;
+$grey: #C4C4C4;
+$lightGreen: #E9F2EF;
+$lightGrey: #F5F5F5;
+$limeGreen: #D2F34C;

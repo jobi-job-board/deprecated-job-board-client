@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+//Main Styles
+html {
+    font-size: 125%;
+}
+
+header {
+    padding: 0 1em;
+}
+
+body {
+    background-color: $lightGreen;
+    color: $green;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

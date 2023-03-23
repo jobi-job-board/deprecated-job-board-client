@@ -1,0 +1,55 @@
+@use "./variables" as *;
+
+//Main Styles
+html {
+    font-size: 125%;
+}
+
+header {
+    padding: 0 1em;
+}
+
+.body {
+    background-color: $lightGrey;
+    color: $darkGreen;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+h1,
+h2,
+h4 {
+    @include gorditaBold;
+}
+
+h3,
+h5,
+p {
+    @include garamondLight;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+button {
+    background-color: $green;
+    border: 2px solid $green;
+    border-radius: 10px;
+    cursor: pointer;
+}

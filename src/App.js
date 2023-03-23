@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/logo.png';
+// Assets
+import './App.scss';
+import { PencilSimple, Notepad,User} from 'phosphor-react';
 
 function App() {
   return (
@@ -7,8 +9,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>TESTING</code> and save to reload.
         </p>
+        <h1>TESTING PART2</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
