@@ -1,0 +1,19 @@
+@use "./variables" as *;
+
+nav {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.navbar-logo {
+  margin-left: 30px;
+}
+
+.navbar-menu li,
+.navbar-buttons li {
+  margin-right: 30px;
+  font-weight: 500;
+}

@@ -2,54 +2,101 @@
 
 //Main Styles
 html {
-    font-size: 125%;
+  font-size: 125%;
 }
 
 header {
-    padding: 0 1em;
+  padding: 0 1em;
 }
 
 .body {
-    background-color: $lightGrey;
-    color: $darkGreen;
+  background-color: $lightGrey;
+  color: $darkGreen;
 }
 
 .wrapper {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-wrapper {
+  width: 90%;
+  max-width: 1478px;
+  margin: 0 auto;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: $black;
+  text-decoration: none;
+  color: $black;
 }
 
 h1,
 h2,
 h4 {
-    @include gorditaBold;
+  @include garamondBold;
 }
 
 h3,
 h5,
 p {
-    @include garamondLight;
+  @include gorditaLight;
+  line-height: 38px;
 }
 
 h2,
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    background-color: $green;
-    border: 2px solid $green;
-    border-radius: 10px;
-    cursor: pointer;
+  background-color: $green;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-round {
+  border-radius: 30px;
+  background-color: $buttonColor;
+  color: white;
+  padding: 10px 25px;
+}
+
+.btn-round:hover,
+.btn-round:focus {
+  opacity: 0.8;
+  color: white;
+}
+
+a:hover,
+a:focus {
+  color: $buttonColor;
+}
+
+input {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  width: 60%;
+  margin-right: 15px;
+}
+
+.display-block {
+  display: block;
+}
+
+.bold {
+  font-weight: 800;
 }
