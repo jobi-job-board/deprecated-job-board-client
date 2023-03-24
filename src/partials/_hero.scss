@@ -1,0 +1,10 @@
+@use "./variables" as *;
+
+.hero {
+  background-image: url("../assets/hero-image.png");
+}
+
+.hero-col-left {
+  width: 50%;
+  color: $black;
+}
