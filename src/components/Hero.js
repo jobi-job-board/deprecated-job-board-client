@@ -1,6 +1,8 @@
+import Navbar from "./Navbar";
 const Hero = () => {
   return (
     <header className="hero">
+      <Navbar/>
       <div className="wrapper">
         <div className="hero-col-left">
           <h1>

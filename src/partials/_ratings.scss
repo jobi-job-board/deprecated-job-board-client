@@ -1,0 +1,38 @@
+@use "./variables" as *;
+
+.ratings {
+    justify-content: flex-end;
+    gap: 5em;
+    background-color: #fff;
+    margin-top: -70px;
+}
+
+.ratings-stats {
+    margin-left: -70px;
+}
+
+.ratings-avatars img,
+.plus {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-left: -30px;
+    height: 69px;
+    width: 69px;
+}
+
+.plus {
+    background-color: #D8E7DE;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratings-stats h6,
+.ratings-stars h6 {
+    color: $black;
+    margin: 0;
+}
+
+.ratings-stats p,
+.ratings-stars p {
+    margin: 0;
+}

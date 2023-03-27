@@ -10,19 +10,19 @@ header {
 }
 
 .body {
-  background-color: $lightGrey;
+  // background-color: $lightGrey;
   color: $darkGreen;
 }
 
 .wrapper {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .nav-wrapper {
   width: 90%;
-  max-width: 1478px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -38,7 +38,8 @@ a {
 
 h1,
 h2,
-h4 {
+h4,
+h6 {
   @include garamondBold;
 }
 
@@ -65,6 +66,13 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .btn-round {

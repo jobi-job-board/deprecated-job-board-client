@@ -1,11 +1,12 @@
 import Hero from "./Hero";
-import Navbar from "./Navbar";
+import Ratings from "./Ratings";
+
 
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Hero />
+      <Ratings />
     </>
   );
 };

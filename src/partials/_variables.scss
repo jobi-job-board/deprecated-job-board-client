@@ -72,6 +72,11 @@ h4 {
 h5 {
   @include fontSize(16);
 }
+
+h6 {
+  @include fontSize(16);
+}
+
 p,
 button,
 nav {
