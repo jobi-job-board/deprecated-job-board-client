@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+.how-it-works {
+  background-color: #fff;
+  text-align: center;
+}
+
+.how-it-works ul li {
+  padding: 24px;
+  max-width: 338px;
+  width: 100%;
+}
+
+.box {
+  border-bottom: 3px solid transparent;
+}
+
+.box:hover {
+  border-bottom: 3px solid $buttonColor;
+}
+
+.active:after {
+  content: "";
+  display: block;
+  position: relative;
+  border-bottom: 3px solid $buttonColor;
+}

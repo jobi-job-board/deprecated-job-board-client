@@ -3,6 +3,7 @@
 //Main Styles
 html {
   font-size: 125%;
+  background-color: white;
 }
 
 header {
@@ -10,7 +11,6 @@ header {
 }
 
 .body {
-  // background-color: $lightGrey;
   color: $darkGreen;
 }
 
@@ -36,18 +36,34 @@ a {
   color: $black;
 }
 
-h1,
-h2,
-h4,
-h6 {
+h1 {
+  font-weight: 500 !important;
   @include garamondBold;
+}
+
+h2 {
+  color: $secondaryHeader;
+  @include garamondBold;
+  font-weight: 600 !important;
 }
 
 h3,
 h5,
 p {
   @include gorditaLight;
-  line-height: 38px;
+}
+
+p {
+  line-height: 30px;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+h4,
+h6 {
+  @include garamondBold;
 }
 
 h2,
@@ -72,7 +88,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .btn-round {
@@ -84,6 +99,19 @@ button {
 
 .btn-round:hover,
 .btn-round:focus {
+  opacity: 0.8;
+  color: white;
+}
+
+.btn-square {
+  border-radius: 10px;
+  background-color: $buttonColor;
+  color: white;
+  padding: 10px 25px;
+}
+
+.btn-square:hover,
+.btn-square:focus {
   opacity: 0.8;
   color: white;
 }

@@ -8,7 +8,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ marginBottom: "500px" }}>
       <Routes>
         <Route path="/" element={<Home />}></Route>
       </Routes>
