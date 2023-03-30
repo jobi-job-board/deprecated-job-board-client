@@ -16,12 +16,12 @@
 }
 
 .box:hover {
-  border-bottom: 3px solid $buttonColor;
+  border-bottom: 3px solid $button-color;
 }
 
 .active:after {
   content: "";
   display: block;
   position: relative;
-  border-bottom: 3px solid $buttonColor;
+  border-bottom: 3px solid $button-color;
 }
