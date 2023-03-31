@@ -4,7 +4,8 @@
 // Custom Font
 @font-face {
   font-family: "gordita-bold";
-  src: local("gordita-bold"), url("../fonts/gordita-bold.otf") format("truetype");
+  src: local("gordita-bold"),
+    url("../fonts/gordita-bold.otf") format("truetype");
 }
 
 @font-face {
@@ -62,7 +63,7 @@ h2 {
 }
 
 h3 {
-  @include fontSize(72);
+  @include fontSize(44);
 }
 
 h4 {
@@ -95,6 +96,9 @@ $button-color: #00bf58;
 $secondary-header: #09321c;
 
 //Spacing
+$h1-margin-bottom: 24px;
 $h2-margin-bottom: 24px;
+$h3-margin-bottom: 12px;
 $p-margin-bottom: 48px;
+$a-margin-bottom: 48px;
 $button-margin-bottom: 16px;
