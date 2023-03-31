@@ -10,8 +10,19 @@ header {
   padding: 0 1em;
 }
 
-.body {
+body {
   color: $dark-green;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .wrapper {
@@ -36,7 +47,8 @@ a {
   color: $black;
 }
 
-h1 {
+h1,
+h3 {
   font-weight: 500 !important;
   @include garamond-bold;
 }
@@ -47,7 +59,6 @@ h2 {
   font-weight: 600 !important;
 }
 
-h3,
 h5,
 p {
   @include gordita-light;
@@ -71,9 +82,16 @@ h3 {
   text-align: center;
 }
 
+h1 {
+  margin-bottom: $h1-margin-bottom;
+}
+
 h2 {
-  margin: 0;
   margin-bottom: $h2-margin-bottom;
+}
+
+p {
+  margin-bottom: $p-margin-bottom;
 }
 
 button {
@@ -109,7 +127,7 @@ button {
 }
 
 .btn-square {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: $button-color;
   color: white;
   padding: 10px 25px;
@@ -117,6 +135,34 @@ button {
 
 .btn-square:hover,
 .btn-square:focus {
+  opacity: 0.8;
+  color: white;
+}
+
+.btn-square-wide {
+  border-radius: 5px;
+  background-color: $button-color;
+  color: white;
+  padding: 20px 25px;
+}
+
+.btn-square-wide:hover,
+.btn-square-wide:focus {
+  opacity: 0.8;
+  color: white;
+}
+
+.btn-square-outline {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid $button-color;
+  color: $button-color;
+  padding: 20px 25px;
+  margin-right: 20px;
+}
+
+.btn-square-outline:hover,
+.btn-square-outline:focus {
   opacity: 0.8;
   color: white;
 }
@@ -140,4 +186,8 @@ input {
 
 .bold {
   font-weight: 800;
+}
+
+.underline {
+  text-decoration: underline;
 }
