@@ -11,7 +11,7 @@ header {
 }
 
 .body {
-  color: $darkGreen;
+  color: $dark-green;
 }
 
 .wrapper {
@@ -38,19 +38,19 @@ a {
 
 h1 {
   font-weight: 500 !important;
-  @include garamondBold;
+  @include garamond-bold;
 }
 
 h2 {
-  color: $secondaryHeader;
-  @include garamondBold;
+  color: $secondary-header;
+  @include garamond-bold;
   font-weight: 600 !important;
 }
 
 h3,
 h5,
 p {
-  @include gorditaLight;
+  @include gordita-light;
 }
 
 p {
@@ -63,12 +63,17 @@ h5 {
 
 h4,
 h6 {
-  @include garamondBold;
+  @include garamond-bold;
 }
 
 h2,
 h3 {
   text-align: center;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: $h2-margin-bottom;
 }
 
 button {
@@ -92,7 +97,7 @@ button {
 
 .btn-round {
   border-radius: 30px;
-  background-color: $buttonColor;
+  background-color: $button-color;
   color: white;
   padding: 10px 25px;
 }
@@ -105,7 +110,7 @@ button {
 
 .btn-square {
   border-radius: 10px;
-  background-color: $buttonColor;
+  background-color: $button-color;
   color: white;
   padding: 10px 25px;
 }
@@ -118,7 +123,7 @@ button {
 
 a:hover,
 a:focus {
-  color: $buttonColor;
+  color: $button-color;
 }
 
 input {

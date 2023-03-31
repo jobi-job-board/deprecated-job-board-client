@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <Hero />
       <Ratings />
-      <HowItWorks />
+      <how-it-works />
       <About />
     </>
   );
