@@ -6,9 +6,8 @@ h2 .grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
-    margin: 20px 5%;
-    position: relative;
     margin-top: 5em;
+    margin-bottom:200px;
 }
 
 .grid-box{

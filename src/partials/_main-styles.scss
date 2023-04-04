@@ -3,7 +3,7 @@
 //Main Styles
 html {
   font-size: 125%;
-  background-color: white;
+  background-color: #fff;
 }
 
 header {
@@ -122,40 +122,54 @@ button {
 .btn-round {
   border-radius: 30px;
   background-color: $button-color;
-  color: white;
+  color: #fff;
   padding: 10px 25px;
 }
 
 .btn-round:hover,
 .btn-round:focus {
   opacity: 0.8;
-  color: white;
+  color: #fff;
 }
 
+.btn-round-outline {
+  border-radius: 30px;
+  background-color: #fff;
+  color: $button-color;
+  border: 1px solid $button-color;
+  padding: 10px 25px;
+}
+
+.btn-round-outline:hover,
+.btn-round-outline:focus {
+  opacity: 0.8;
+  color: #fff;
+  background-color:$button-color;
+}
 .btn-square {
   border-radius: 5px;
   background-color: $button-color;
-  color: white;
+  color: #fff;
   padding: 10px 25px;
 }
 
 .btn-square:hover,
 .btn-square:focus {
   opacity: 0.8;
-  color: white;
+  color: #fff;
 }
 
 .btn-square-wide {
   border-radius: 5px;
   background-color: $button-color;
-  color: white;
+  color: #fff;
   padding: 20px 25px;
 }
 
 .btn-square-wide:hover,
 .btn-square-wide:focus {
   opacity: 0.8;
-  color: white;
+  color: #fff;
 }
 
 .btn-square-outline {
@@ -170,7 +184,7 @@ button {
 .btn-square-outline:hover,
 .btn-square-outline:focus {
   opacity: 0.8;
-  color: white;
+  color: #fff;
 }
 
 a:hover,

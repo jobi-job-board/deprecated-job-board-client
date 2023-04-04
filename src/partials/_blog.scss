@@ -1,1 +1,26 @@
 @use "./variables" as *;
+
+.col-one,.col-two,.col-three{
+    height:527px;
+    width:410px;
+}
+
+.blog-image1,
+.blog-image2,
+.blog-image3{
+    width:410px;
+    height:301px;
+    margin-bottom:45px;
+}
+
+.date{
+    margin-bottom:24px;
+}
+
+h4{
+    margin-bottom:40px;
+}
+
+.blog button{
+    margin-bottom:215px;
+}
