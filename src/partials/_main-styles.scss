@@ -24,6 +24,9 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+.new-line{
+  display:block;
+}
 
 .wrapper {
   width: 90%;
@@ -101,6 +104,9 @@ button {
   cursor: pointer;
 }
 
+.left{
+  text-align:left
+}
 .flex {
   display: flex;
   justify-content: space-between;
