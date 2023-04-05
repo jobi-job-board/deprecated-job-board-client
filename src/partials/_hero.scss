@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 .hero {
-  background: url("../assets/hero-image.png") no-repeat;
+  background: url("../assets/homepage-section/hero-image.png") no-repeat;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -15,3 +15,18 @@
   color: $black;
   margin-top: 70px;
 }
+
+.hero-col-right{
+  position:relative;
+}
+.hero-image-female{
+  position:absolute;
+  bottom: 4em;
+  left: 40em;
+}
+img.labels{
+  position:absolute;
+  bottom:10em;
+  left: 34em;
+}
+
