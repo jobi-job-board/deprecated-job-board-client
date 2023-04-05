@@ -1,4 +1,7 @@
-import Navbar from "./Navbar";
+import woman from '../assets/homepage-section/female.png';
+import labels from '../assets/homepage-section/labels.png';
+
+import Navbar from './Navbar';
 const Hero = () => {
   return (
     <header className="hero">
@@ -25,6 +28,9 @@ const Hero = () => {
             Video Editing
           </p>
         </div>
+        <div className="hero-col-right"></div>
+        <img className="hero-image-female" src={woman} alt="woman" />
+        <img className="labels" src={labels} alt="labels" />
       </div>
     </header>
   );
