@@ -23,22 +23,22 @@
 //Font Families
 @mixin garamond-bold {
   font-family: "EB Garamond", serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @mixin garamond-light {
   font-family: "EB Garamond", serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 @mixin gordita-bold {
   font-family: "garamond-black", serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @mixin gordita-light {
   font-family: "gordita-light", serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 //Font Size
