@@ -18,7 +18,7 @@ const Hero = () => {
             search through from our website
           </h5>
           <form>
-            <input type="text" />
+            <input type="text" placeholder="Search job, title etc...." />
             <button type="submit" className="btn-round">
               Search
             </button>
