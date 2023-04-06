@@ -24,20 +24,21 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-.new-line{
-  display:block;
+
+.new-line {
+  display: block;
 }
 
 .wrapper {
   width: 90%;
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 6.875em auto;
 }
 
 .nav-wrapper {
   width: 90%;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 6.875em auto;
 }
 
 ul {
@@ -50,51 +51,126 @@ a {
   color: $black;
 }
 
-h1,
-h3 {
-  font-weight: 500 !important;
-  @include garamond-bold;
+h1 {
+  margin-top: 7.5em;
+  font-size: 5.625rem;
+  line-height: 6.25rem;
+  font-family: $garamond-light;
+  text-align: left;
 }
 
 h2 {
-  color: $secondary-header;
-  @include garamond-bold;
-  font-weight: 600 !important;
+  font-family: $garamond-bold;
+  font-size: 4.5rem;
+  line-height: 5.9375rem;
+  text-align: left;
 }
 
-h5,
-p {
-  @include gordita-light;
+.h2-small {
+  font-size: 3.375em;
+  line-height: 1.425em;
+  font-family: $gordita-light;
 }
 
-p {
-  line-height: 30px;
-}
-
-h5 {
-  font-weight: 600;
-}
-
-h4,
-h6 {
-  @include garamond-bold;
-}
-
-h2,
 h3 {
+  margin-top: 9.875em;
+  font-size: 3.25rem;
+  font-family: $gordita-bold;
+  line-height: 4.6875em;
   text-align: center;
 }
 
-h1 {
-  margin-bottom: $h1-margin-bottom;
+h4 {
+  font-family: $gordita-bold;
+  font-size: 2.625rem;
+  line-height: 2.625rem;
+  color: $button-color;
+  margin-top: 4.5625em;
 }
 
-h2 {
-  margin-bottom: $h2-margin-bottom;
+h5 {
+  font-family: $gordita-light;
+  font-size: 1.25rem;
+  margin-top: 3.875em;
+  line-height: 2.375rem;
+}
+
+.h5-strong {
+  margin-top: 2.1875em;
+  font-family: $gordita-bold;
+  line-height: 1.9375em;
+  font-size: 1.375rem;
+}
+
+h6 {
+  margin-top: 2.0625em;
+  font-family: $gordita-light;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
 }
 
 p {
-  margin-bottom: $p-margin-bottom;
+  margin-top: 2.125em;
+  font-family: $gordita-light;
+  line-height: 2.1875rem;
+  font-size: 1rem;
+}
+
+.p-opacity {
+  line-height: 28px;
+  opacity: 50%;
+}
+
+.p-small {
+  margin-top: 1.3125em;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  opacity: 50%;
+}
+
+.p-large {
+  font-size: 1.125rem;
+  line-height: 2.625rem;
+  opacity: 40%;
+}
+
+.email {
+  margin-top: 0.625em;
+  color: $button-color;
+  font-size: 1.125rem;
+  font-family: $gordita-bold;
+  line-height: 1.603125rem;
+  text-decoration: underline;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.icon-1 {
+  margin-top: 4.4375em;
+}
+
+.icon-2 {
+  margin-left: 1.125em;
+  margin-top: 1.4375em;
+  margin-bottom: 1.625em;
+}
+
+.icon-3 {
+  margin-top: 2.375em;
+  margin-right: 0.75em;
+  width: 8.0625em;
+  height: 2.1875em;
+}
+
+.logo-footer {
+  height: 5.625em;
+  width: 7.4375em;
 }
 
 button {
@@ -104,9 +180,10 @@ button {
   cursor: pointer;
 }
 
-.left{
-  text-align:left
+.left {
+  text-align: left;
 }
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -120,10 +197,14 @@ button {
 }
 
 .btn-round {
+  margin-top: 1.25em;
+  font-family: $gordita-bold;
+  font-size: 1rem;
+  line-height: 1.425em;
   border-radius: 30px;
   background-color: $button-color;
   color: #fff;
-  padding: 10px 25px;
+  padding: 0.75em 2em;
 }
 
 .btn-round:hover,
@@ -144,7 +225,7 @@ button {
 .btn-round-outline:focus {
   opacity: 0.8;
   color: #fff;
-  background-color:$button-color;
+  background-color: $button-color;
 }
 .btn-square {
   border-radius: 5px;
@@ -193,6 +274,8 @@ a:focus {
 }
 
 input {
+  margin-top: 2.0625em;
+  line-height: 3.0625em;
   border: none;
   border-radius: 30px;
   padding: 10px 25px;
