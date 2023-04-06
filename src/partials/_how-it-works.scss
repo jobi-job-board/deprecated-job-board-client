@@ -5,18 +5,26 @@
   text-align: center;
 }
 
-.how-it-works ul li {
-  padding: 24px;
-  max-width: 338px;
-  width: 100%;
+.how-it-works h2{
+  text-align:center;
 }
 
-.box {
-  border-bottom: 3px solid transparent;
+.grid-container-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5em;
+  margin-bottom: 200px;
+  }
+
+.box{
+  border: 1px solid purple;
+  width: 444px;
+  padding: 52px ;
 }
 
 .box:hover {
   border-bottom: 3px solid $button-color;
+
 }
 
 .active:after {

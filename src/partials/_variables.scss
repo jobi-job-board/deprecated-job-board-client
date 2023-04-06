@@ -1,26 +1,38 @@
 //Font Import
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Roboto:ital,wght@1,300&display=swap');
 
 // Custom Font
+
+@font-face {
+  font-family: "circular-std";
+  src: local("circular-std"),
+    url("../fonts/circular-std-medium-500.ttf") format("truetype");
+}
+
 @font-face {
   font-family: "gordita-bold";
   src: local("gordita-bold"),
-    url("../fonts/gordita-bold.otf") format("truetype");
+    url("../fonts/gordita-bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "gordita-light";
   src: local("gordita-light"),
-    url("../fonts/gordita-light.otf") format("truetype");
+    url("../fonts/gordita-light.otf") format("opentype");
 }
 
 @font-face {
   font-family: "gordita-regular";
   src: local("gordita-regular"),
-    url("../fonts/gordita-regular.otf") format("truetype");
+    url("../fonts/gordita-regular.otf") format("opentype");
 }
 
 //Font Families
+
+@mixin circular-std {
+  font-family: "circular-std", serif;
+  font-weight: 500;
+}
 @mixin garamond-bold {
   font-family: "EB Garamond", serif;
   font-weight: 600;
@@ -32,7 +44,7 @@
 }
 
 @mixin gordita-bold {
-  font-family: "garamond-black", serif;
+  font-family: "gordita-bold", serif;
   font-weight: 500;
 }
 
@@ -42,47 +54,47 @@
 }
 
 //Font Size
-$title: 90px;
-$secondary-title: 85px;
-$tertiary-title: 72px;
-$body: 24px;
-$footer-heading: 36px;
+// $title: 90px;
+// $secondary-title: 85px;
+// $tertiary-title: 72px;
+// $body: 24px;
+// $footer-heading: 36px;
 
-/*Convert to Rem*/
-@mixin fontSize($sizeValue) {
-  font-size: $sizeValue * 1px;
-  font-size: calc($sizeValue/16) * 1rem;
-}
+// /*Convert to Rem*/
+// @mixin fontSize($sizeValue) {
+//   font-size: $sizeValue * 1px;
+//   font-size: calc($sizeValue/16) * 1rem;
+// }
 
-h1 {
-  @include fontSize(72);
-}
+// h1 {
+//   @include fontSize(72);
+// }
 
-h2 {
-  @include fontSize(58);
-}
+// h2 {
+//   @include fontSize(58);
+// }
 
-h3 {
-  @include fontSize(44);
-}
+// h3 {
+//   @include fontSize(44);
+// }
 
-h4 {
-  @include fontSize(24);
-}
+// h4 {
+//   @include fontSize(24);
+// }
 
-h5 {
-  @include fontSize(16);
-}
+// h5 {
+//   @include fontSize(16);
+// }
 
-h6 {
-  @include fontSize(16);
-}
+// h6 {
+//   @include fontSize(16);
+// }
 
-p,
-button,
-nav {
-  @include fontSize(13);
-}
+// p,
+// button,
+// nav {
+//   @include fontSize(13);
+// }
 
 //Colour Palette
 $dark-green: #254135;
@@ -95,10 +107,4 @@ $lime-green: #d2f34c;
 $button-color: #00bf58;
 $secondary-header: #09321c;
 
-//Spacing
-$h1-margin-bottom: 24px;
-$h2-margin-bottom: 24px;
-$h3-margin-bottom: 12px;
-$p-margin-bottom: 48px;
-$a-margin-bottom: 48px;
-$button-margin-bottom: 16px;
+
