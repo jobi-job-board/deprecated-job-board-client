@@ -1,13 +1,14 @@
-import icon1 from '../assets/icons/icon-1.png';
-import icon2 from '../assets/icons/icon-2.png';
-import icon3 from '../assets/icons/icon-3.png';
+import icon1 from "../assets/icons/icon-1.png";
+import icon2 from "../assets/icons/icon-2.png";
+import icon3 from "../assets/icons/icon-3.png";
 
 const HowItWorks = () => {
   return (
     <section>
       <div className="wrapper how-it-works">
+        <div className="line-left"></div>
         <h2>How it works!</h2>
-        <div>
+        <div className="line-right">
           <ul className="grid-container-three">
             <li className="box">
               <img src={icon1} alt="icon one" />
