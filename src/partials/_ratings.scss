@@ -3,9 +3,12 @@
 .ratings {
   justify-content: flex-end;
   gap: 5em;
-  margin-top: -50px;
+  margin-top: -100px;
   padding: 24px;
   background-color: transparent;
+  position: relative;
+  z-index: 1;
+  top: 3em;
 }
 
 .ratings-stats {

@@ -5,26 +5,23 @@
   text-align: center;
 }
 
-.how-it-works h2{
-  text-align:center;
+.how-it-works h2 {
+  text-align: center;
 }
 
 .grid-container-three {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 5em;
-  margin-bottom: 200px;
-  }
+  margin-bottom: 12.5em;
+}
 
-.box{
-  border: 1px solid purple;
+.box {
   width: 444px;
-  padding: 52px ;
+  padding: 3.25em;
 }
 
 .box:hover {
   border-bottom: 3px solid $button-color;
-
 }
 
 .active:after {

@@ -2,8 +2,9 @@
 
 //Main Styles
 html {
-  font-size: 125%;
+  // font-size: 125%;
   background-color: #fff;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -41,6 +42,12 @@ p {
   margin: 0 auto;
 }
 
+.hero-wrapper {
+  width: 90%;
+  max-width: 1600px;
+  margin: 4em 8.75em;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -54,93 +61,103 @@ a {
 h1 {
   // margin-top: 7.5em;
   @include garamond-light;
-  font-size: calc(5.625rem/5*4);
-  line-height: 6.25rem;
+  font-size: calc(5.625rem / 5 * 4);
+  line-height: calc(6.25rem / 5 * 4);
   text-align: left;
 }
 
 h2 {
   @include garamond-bold;
-  font-size: calc(4.5rem/5*4);
-  line-height: 5.9375rem;
+  font-size: calc(4.5rem / 5 * 4);
+  line-height: calc(5.9375rem / 5 * 4);
   text-align: left;
 }
 
 .h2-small {
   @include gordita-light;
-  font-size: calc(3.375em/5*4);
-  line-height: 1.425em;
+  font-size: calc(3.375em / 5 * 4);
+  line-height: calc(1.425em / 5 * 4);
 }
 
 h3 {
   @include gordita-bold;
-  font-size: calc(3.25rem/5*4);
-  line-height: 4.6875em;
+  font-size: calc(3.25rem / 5 * 4);
+  line-height: calc(4.6875em / 5 * 4);
   text-align: center;
   margin-top: 9.875em;
 }
 
 h4 {
   @include gordita-bold;
-  font-size: calc(2.625rem/5*4);
-  line-height: 2.625rem;
+  font-size: calc(2.625rem / 5 * 4);
+  line-height: calc(2.625rem / 5 * 4);
   color: $button-color;
   margin-top: 4.5625em;
 }
 
 h5 {
   @include gordita-light;
-  font-size: calc(1.25rem/5*4);
-  line-height: 2.375rem;
-  margin-top: 1.45em;
+  font-size: calc(1.25rem / 5 * 4);
+  line-height: calc(2.375rem / 5 * 4);
+  margin-top: 1.69em;
 }
 
 .h5-strong {
   @include gordita-bold;
-  font-size: calc(1.375rem/5*4);
-  line-height: 1.9375em;
+  font-size: calc(1.375rem / 5 * 4);
+  line-height: calc(1.9375em / 5 * 4);
   margin-top: 2em;
 }
 
 h6 {
   @include gordita-light;
-  font-size: calc(1.5rem/5*4);
-  line-height: 1.75rem;
+  font-size: calc(1.5rem / 5 * 4);
+  line-height: calc(1.75rem / 5 * 4);
   margin-top: 2.0625em;
 }
 
 p {
   @include gordita-light;
-  font-size: calc(1rem/5*4);
-  line-height: 2.1875rem;
+  font-size: calc(1rem / 5 * 4);
+  line-height: calc(2.1875rem / 5 * 4);
   margin-top: 2.125em;
 }
 
 .p-opacity {
-  line-height: 28px;
+  line-height: calc(1.75em / 5 * 4);
   opacity: 50%;
 }
 
-
 .p-small {
-  font-size: calc(0.875rem/5*4);
-  line-height: 1.875rem;
+  font-size: calc(0.875rem / 5 * 4);
+  line-height: calc(1.875rem / 5 * 4);
   margin-top: 1.3125em;
   opacity: 50%;
 }
 
 .p-large {
-  font-size: calc(1.125rem/5*4);
-  line-height: 2.625rem;
+  font-size: calc(1.125rem / 5 * 4);
+  line-height: calc(2.625rem / 5 * 4);
   opacity: 40%;
+}
+
+.navbar-menu,
+.login {
+  @include circular-std-light;
+  font-size: calc(1.125rem / 5 * 4);
+  line-height: calc(3.125rem / 5 * 4);
+}
+
+.navbar-menu:hover {
+  color: $button-color;
 }
 
 .email {
   @include gordita-bold;
-  font-size: calc(1.125rem/5*4);
+  font-size: calc(1.125rem / 5 * 4);
   margin-top: 0.625em;
   color: $button-color;
-  line-height: 1.603125rem;
+  line-height: calc(1.603125rem / 5 * 4);
   text-decoration: underline;
 }
 
@@ -169,7 +186,7 @@ p {
 }
 
 .logo-footer {
-  width:100%;
+  width: 100%;
   max-height: 5.625em;
   max-width: 7.4375em;
 }
@@ -199,13 +216,13 @@ button {
 
 .btn-round {
   @include circular-std;
-  font-size: calc(1.25rem/5*4);
-  line-height: 1.875rem;
+  font-size: calc(1.25rem / 5 * 4);
+  line-height: calc(1.875rem / 5 * 4);
   border-radius: 50px;
   background-color: $button-color;
   color: #fff;
-  margin-top:3.125em;
-  padding: 0.375em 1.75em;
+  margin-top: 3.125em;
+  padding: 0.645em 1.75em;
 }
 
 .btn-round:hover,
@@ -235,8 +252,20 @@ button {
   padding: 10px 25px;
 }
 
+.btn-register {
+  @include circular-std;
+  font-size: calc(1.063rem / 5 * 4);
+  line-height: calc(1.875rem / 5 * 4);
+  border-radius: 50px;
+  background-color: $button-color;
+  color: #fff;
+  padding: 0.645em 1.75em;
+}
+
 .btn-square:hover,
-.btn-square:focus {
+.btn-square:focus,
+.btn-register:hover,
+.btn-register:focus {
   opacity: 0.8;
   color: #fff;
 }
@@ -274,22 +303,23 @@ a:focus {
   color: $button-color;
 }
 
+form {
+  line-height: 0;
+}
+
 input {
-  margin-top: 3.125em;
   border: none;
   border-radius: 30px;
-  padding: 0.8em 0 0.75em 1.75em;
+  padding: 1.1em 0 0.75em 1.75em;
   // padding: 10px 25px;
-  line-height: 1.25rem;
-  width:100%;
-  max-width: 26.875em;
+  line-height: calc(1.25rem / 5 * 4);
+  width: 100%;
+  max-width: 19.875em;
   margin-right: 1.125em;
 }
-input::placeholder{
-font-size:0.93rem;
-@include gordita-light;
-
-
+input::placeholder {
+  font-size: 0.93rem;
+  @include gordita-light;
 }
 .display-block {
   display: block;
@@ -307,6 +337,6 @@ font-size:0.93rem;
   margin-top: 0.69em;
 }
 //line heights
-.lh-small{
+.lh-small {
   line-height: 1.875rem;
 }
