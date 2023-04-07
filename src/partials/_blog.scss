@@ -1,26 +1,31 @@
 @use "./variables" as *;
 
-.col-one,.col-two,.col-three{
-    height:527px;
-    width:410px;
+
+.blog h2 {
+    text-align: center;
+    margin-bottom: 83px;
 }
 
-.blog-image1,
-.blog-image2,
-.blog-image3{
-    width:410px;
-    height:301px;
-    margin-bottom:45px;
+/* CSS */
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
 }
 
-.date{
-    margin-bottom:24px;
+.col-one,
+.col-two,
+.col-three {
+    width: 441px;
 }
 
-h4{
-    margin-bottom:40px;
+
+.date {
+    margin-bottom: 24px;
 }
 
-.blog button{
-    margin-bottom:215px;
+.blog button {
+    margin-top: 1.25em;
 }
+

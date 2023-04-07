@@ -1,29 +1,42 @@
 @use "./variables" as *;
+
+
 h2 .grid{
     text-align: left;
 }
-.grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin-top: 5em;
-    margin-bottom:200px;
+
+
+.grid-wrapper{
+    background-image: url(../assets/homepage-section/box.png);
+    width:50% auto;
+    background-position: right;
+    margin: 5em auto 200px;
 }
 
-.grid-box{
+.grid-box {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left:1em;
-    width:300px;
-    height:310px;
-    border-radius:5px;
+    padding-left: 1em;
+    width: 300px;
+    height: 310px;
+    border-radius: 5px;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.20);
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.20);
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    background-position: center;
+    background-size: cover;
+}
+
+
 .circle{
-    border: 3px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 50%;
     width: 70px;
     height: 70px;
@@ -46,8 +59,11 @@ img.icon{
 }
 
 .green h4{
+    @include garamond-light;
     font-size:73px;
+    font-weight:400;
     margin:0;
+    color:#fff;
 }
 
 .green,

@@ -1,6 +1,6 @@
-import React from "react";
-import logo from "../assets/logo.png";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import React from 'react';
+import logo from '../assets/logo.png';
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,15 +8,17 @@ const Footer = () => {
       <div className="wrapper">
         <div className="footer-top flex ">
           <div className="footer-top-text flex-col">
-            <h3>Most complete job portal.</h3>
-            <p>Signup and start find your job or talents.</p>
+            <h3 className="h3-footer">Most complete job portal.</h3>
+            <p className="p-footer">
+              Signup and start find your job or talents.
+            </p>
           </div>
           <div>
             <button className="btn-square-outline">Looking for a job?</button>
             <button className="btn-square-wide">Post a job</button>
           </div>
         </div>
-        <div className="footer-bottom flex">
+        <div className="footer-bottom flex-footer">
           <ul className="footer-bottom-col-1">
             <li>
               <img src={logo} alt="Jobi logo" />
@@ -29,7 +31,7 @@ const Footer = () => {
               </address>
             </li>
             <li className="footer-social">
-              <ul className="flex">
+              <ul className="flex-footer">
                 <li>
                   <a href="#">
                     <FaFacebookF />
