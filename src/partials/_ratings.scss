@@ -4,12 +4,10 @@
   justify-content: flex-end;
   gap: 5em;
   margin-top: -100px;
-  // padding: 24px;
+  padding: 24px;
   background-color: transparent;
   position: relative;
   z-index: 1;
-  top: 3em;
-  right: 6em;
 }
 
 .ratings-stats {
@@ -19,7 +17,7 @@
 .ratings-avatars img,
 .plus {
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid $white;
   margin-left: -30px;
   height: 69px;
   width: 69px;
@@ -33,7 +31,7 @@
 
 .ratings-stats h6,
 .ratings-stars h6 {
-  color: $black;
+  color: $secondary-color-5;
   margin: 0;
 }
 

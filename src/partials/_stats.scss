@@ -1,0 +1,14 @@
+@use "./variables" as *;
+
+.stats {
+  border-bottom: 1.5px solid #dfdfdf;
+}
+
+.stats h3 {
+  color: $secondary-color-5;
+  margin-top: 0;
+}
+
+.stats .wrapper {
+  margin-bottom: 72px;
+}
