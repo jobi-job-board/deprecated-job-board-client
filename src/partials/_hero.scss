@@ -13,7 +13,7 @@
 
 .hero-col-left {
   width: 608px;
-  color: $black;
+  color: $secondary-color-5;
 }
 
 .hero h5 {
@@ -23,7 +23,7 @@
 .hero-image-female {
   position: absolute;
   bottom: 5em;
-  left:55%;
+  left: 55%;
   max-width: 500px;
   width: 100%;
 }
@@ -31,13 +31,13 @@
 img.cards {
   position: absolute;
   bottom: 2em;
-  right:5em;
+  right: 5em;
   width: 20%;
 }
 
 .hero-image-details {
   position: relative;
-  left:14%;
+  left: 14%;
   // left: 31em;
   bottom: 16em;
 }

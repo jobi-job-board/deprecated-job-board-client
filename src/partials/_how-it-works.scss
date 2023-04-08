@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 .how-it-works {
-  background-color: #fff;
+  background-color: $white;
   text-align: center;
 }
 .wrapper.how-it-works {
@@ -21,9 +21,9 @@
   display: block;
   position: absolute;
   top: 50%;
-  width:90%;
+  width: 90%;
   height: 2px;
-  background-color: rgba(0,0,0,0.2)
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .wrapper.how-it-works h2:before {
@@ -47,12 +47,12 @@
 }
 
 .box:hover {
-  border-bottom: 3px solid $button-color;
+  border-bottom: 3px solid $primary-color-3;
 }
 
 .active:after {
   content: "";
   display: block;
   position: relative;
-  border-bottom: 3px solid $button-color;
-  }
+  border-bottom: 3px solid $primary-color-3;
+}

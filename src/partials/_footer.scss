@@ -1,13 +1,12 @@
 @use "./variables" as *;
 
-footer{
-  margin-top:215px;
+footer {
+  margin-top: 215px;
 }
 
-
 .footer-top {
-  border-top: 1px solid $grey;
-  border-bottom: 1px solid $grey;
+  border-top: 1px solid $white-2;
+  border-bottom: 1px solid $white-2;
 }
 
 .footer-top-text {
@@ -15,18 +14,18 @@ footer{
 }
 
 .address {
-   font-weight: 600;
+  font-weight: 600;
   font-style: normal;
 }
 .flex-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 .footer-bottom ul li a {
   color: #000;
-  opacity:60%;
+  opacity: 60%;
 }
 
 .footer-social ul {
@@ -35,16 +34,16 @@ footer{
 }
 
 .footer-social a {
-  color: $button-color;
-  border: 1px solid $button-color;
+  color: $primary-color-3;
+  border: 1px solid $primary-color-3;
   border-radius: 4px;
   padding: 12px;
 }
 
 .footer a {
   @include gordita-light;
-  font-size:1.063rem;
-  line-height:2.75rem ;
+  font-size: 1.063rem;
+  line-height: 2.75rem;
 }
 
 .footer-bottom-col-1 {
@@ -56,8 +55,8 @@ footer{
   width: calc(60% / 3);
 }
 
-.footer-copyright{
-  margin:0;
+.footer-copyright {
+  margin: 0;
 }
 .footer-copyright p {
   margin-bottom: 0;
