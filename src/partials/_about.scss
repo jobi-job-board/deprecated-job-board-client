@@ -1,10 +1,17 @@
 @use "./variables" as *;
 
 .about-text {
-  border: 3px solid red;
   padding: 24px;
+  width:489px;
 }
 
 .secondary-header {
   text-align: left;
+}
+
+.about img{
+  height:383px;
+  object-fit:cover;
+  max-width:100%
+
 }

@@ -2,7 +2,7 @@
 
 //Main Styles
 html {
-  // font-size: 125%;
+  font-size: 125%;
   background-color: #fff;
   scroll-behavior: smooth;
 }
@@ -33,7 +33,7 @@ p {
 .wrapper {
   width: 90%;
   max-width: 1600px;
-  margin: 6.875em auto;
+  margin: 6.875em 8.75em;
 }
 
 .nav-wrapper {
@@ -73,6 +73,13 @@ h2 {
   text-align: left;
 }
 
+h2 {
+  @include garamond-light;
+  font-size: calc(4.563rem / 5 * 4);
+  line-height: calc(3.188rem / 5 * 4);
+  text-align: left;
+}
+
 .h2-small {
   @include gordita-light;
   font-size: calc(3.375em / 5 * 4);
@@ -86,7 +93,13 @@ h3 {
   text-align: center;
   margin-top: 9.875em;
 }
+.h3-footer{
+  @include garamond-bold;
+  font-size: calc(3.25rem / 5 * 4);
+    line-height: calc(3.875em / 5 * 4);
 
+  margin-top:0;
+}
 h4 {
   @include gordita-bold;
   font-size: calc(2.625rem / 5 * 4);
@@ -95,9 +108,16 @@ h4 {
   margin-top: 4.5625em;
 }
 
+
 h5 {
   @include gordita-light;
   font-size: calc(1.25rem / 5 * 4);
+  line-height: calc(2.375rem / 5 * 4);
+  margin-top: 1.69em;
+}
+.regular{
+  @include gordita-regular;
+  font-size: calc(1.375rem / 5 * 4);
   line-height: calc(2.375rem / 5 * 4);
   margin-top: 1.69em;
 }
@@ -110,7 +130,7 @@ h5 {
 }
 
 h6 {
-  @include gordita-light;
+  @include gordita-regular;
   font-size: calc(1.5rem / 5 * 4);
   line-height: calc(1.75rem / 5 * 4);
   margin-top: 2.0625em;
@@ -229,6 +249,22 @@ button {
 .btn-round:focus {
   opacity: 0.8;
   color: #fff;
+}
+
+.btn-small-round {
+  border-radius: 30px;
+  background-color: $button-color;
+  color: #fff;
+  border: 1px solid $button-color;
+  padding: 10px 25px;
+  margin-top:1.25em;
+}
+
+.btn-small-round:hover,
+.btn-small-round:focus {
+  opacity: 0.8;
+  color: #fff;
+  background-color: $button-color;
 }
 
 .btn-round-outline {
