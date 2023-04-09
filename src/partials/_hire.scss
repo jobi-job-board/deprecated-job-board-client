@@ -1,0 +1,61 @@
+@use "./variables" as *;
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.hire {
+  height: 711px;
+}
+
+.wrapper {
+  border: 1px solid red;
+}
+
+.gap {
+  gap: 147px;
+}
+
+.hire-right {
+  padding: 54px 0;
+  border: 1px solid red;
+  padding-left: 10px;
+}
+.hire-left {
+  border: 1px solid red;
+  margin-top: 40px;
+  height: 711px;
+}
+
+.hire button {
+  margin-top: 63.5px;
+  margin-bottom: 0;
+  width: 170px;
+  font-size: calc(1rem / 5 * 4);
+}
+
+.hire h2 {
+  margin-top: 20px;
+}
+
+.hire h6 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: calc(1.5rem / 5 * 4);
+}
+
+.hire p {
+  font-size: calc(1.125rem / 5 * 4);
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-3 {
+  margin-bottom: 33px;
+  margin-top: 0;
+}
+hr {
+  margin: 0;
+}
