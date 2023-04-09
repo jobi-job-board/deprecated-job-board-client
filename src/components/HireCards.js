@@ -15,7 +15,6 @@ const HireCards = ({ peopleToHire }) => {
                 <p>{person.job}</p>
               </div>
             </div>
-
             <div className="flex-col hire-col-right">
               <button className="btn-square-outline">HIRE ME</button>
               <p>

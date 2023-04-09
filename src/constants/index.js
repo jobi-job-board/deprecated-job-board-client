@@ -33,3 +33,17 @@ export const peopleToHire = [
     avatar: hire4,
   },
 ];
+
+export const accordionData = [
+  {
+    id: 1,
+    title: "Seamless Search",
+    content:
+      "It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.",
+  },
+  {
+    id: 2,
+    title: "Hire top talents",
+    content: "",
+  },
+];
