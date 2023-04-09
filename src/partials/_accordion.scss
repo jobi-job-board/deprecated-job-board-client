@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+.open {
+  display: block;
+}
+
+.content {
+  display: none;
+}
+
+.title {
+  cursor: pointer;
+}
