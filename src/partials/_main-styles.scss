@@ -167,6 +167,10 @@ p {
   opacity: 40%;
 }
 
+.p-strong {
+  @include circular-std;
+}
+
 .navbar-menu,
 .login {
   @include circular-std-light;
