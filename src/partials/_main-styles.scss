@@ -100,12 +100,27 @@ h3 {
 
   margin-top: 0;
 }
-h4 {
+.h4 {
   @include gordita-bold;
   font-size: calc(2.625rem / 5 * 4);
   line-height: calc(2.625rem / 5 * 4);
   color: $primary-color-3;
   margin-top: 4.5625em;
+}
+
+.testimonials-left .h4{
+  font-size: calc(2.625rem / 5 * 4);
+  line-height: calc(2.625rem / 5 * 4);
+  margin-top:5.813rem;
+  color: $primary-color-3;
+}
+
+.testimonial-title{
+  @include gordita-bold;
+  font-size:calc(1.75rem / 5 * 4);
+  line-height:1.74em;
+  color: $primary-color-3;
+  margin-top:3rem;
 }
 
 h5 {
@@ -134,6 +149,7 @@ h6 {
   line-height: calc(1.75rem / 5 * 4);
   margin-top: 2.0625em;
 }
+
 
 .stats-small-text {
   @include circular-std-light;
@@ -246,6 +262,11 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.flex-start{
+  display:flex;
+  justify-content: flex-start;
 }
 
 .btn-round {

@@ -80,7 +80,7 @@ const Grid = () => {
               <p>2340 vacancy</p>
             </div>
             <div className="grid-box flex-col green">
-              <h4>13k+</h4>
+              <h4 className="h4">13k+</h4>
               <p>Job already posted</p>
               <div className="flex-space-evenly">
                 <img className="icon" src={curved} alt="code" />
