@@ -1,24 +1,84 @@
 @use "./variables" as *;
 
-
-.testimonials-left{
-    width: 40%;
-    // margin-right:293px;
+.testimonials-left {
+  width: 40%;
+  // margin-right:293px;
 }
 
-.testimonials-right{
-    width: 60%;
-    background: url("../assets/icons/bg-green-testimonials.png")no-repeat;
-    background-size:cover;
-    height:690px;
-    margin-left:150px;
-
+.testimonials-right {
+  width: 60%;
+  background: url("../assets/icons/bg-green-testimonials.png") no-repeat;
+  background-size: cover;
+  height: 690px;
+  margin-left: 150px;
 }
 
-.flex-start div:last-child{
-    margin-left:auto;
+.flex-start div:last-child {
+  margin-left: auto;
 }
 
-.testimonial-avatar{
-    margin-right:1.625em;
+.testimonial-avatar {
+  margin-right: 1.625em;
+}
+
+/* Dots */
+.slideshow-dots {
+  text-align: center;
+}
+.slideshow-dot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  background-color: #c4c4c4;
+}
+
+/* Slideshow */
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  margin-left: -200px;
+  display: block;
+  height: 450px;
+  margin-top: 7.125em;
+}
+
+.slideshow-slider {
+  //   white-space: wrap;
+  word-wrap: break-word;
+  transition: ease 1000ms;
+  gap: 53px;
+  margin-right: -400px;
+}
+
+.slide {
+  display: inline-block;
+  width: 100%;
+  border-radius: 2px;
+  background-color: white;
+  height: 450px;
+  max-width: 483px;
+}
+
+.slideshow-dot .active {
+  background-color: $primary-color-3;
+}
+
+.testimonial-stars {
+  margin-top: 0;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.testimonials hr {
+  margin-top: 3.688em;
+}
+
+.testimonial-title {
+  margin-top: 3em;
+  font-size: calc(1.75rem / 5 * 4);
+  line-height: calc(1.813rem / 5 * 4);
 }
