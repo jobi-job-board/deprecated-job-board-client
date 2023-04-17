@@ -1,12 +1,12 @@
 @use "./variables" as *;
 
 .testimonials-left {
-  width: 40%;
+  width: 30%;
   // margin-right:293px;
 }
 
 .testimonials-right {
-  width: 60%;
+  width: 70%;
   background: url("../assets/icons/bg-green-testimonials.png") no-repeat;
   background-size: cover;
   height: 690px;
@@ -39,46 +39,57 @@
 
 .slideshow {
   margin: 0 auto;
+  width:100%;
   overflow: hidden;
-  margin-left: -200px;
-  display: block;
+  // margin-left: -200px;
+  // display: block;
   height: 450px;
   margin-top: 7.125em;
 }
 
 .slideshow-slider {
-  //   white-space: wrap;
-  word-wrap: break-word;
+  // white-space: nowrap;
   transition: ease 1000ms;
   gap: 53px;
   margin-right: -400px;
+  width: 802px;
+  height: 420px;
 }
 
 .slide {
-  display: inline-block;
+  display: flex;
+  flex: 0 0 calc(50% - 16px);
+  flex-wrap: wrap;
+  // display: inline-block;
+  // overflow-wrap: break-word;
   width: 100%;
   border-radius: 2px;
   background-color: white;
-  height: 450px;
   max-width: 483px;
+  padding-bottom: 2.69rem;
 }
 
-.slideshow-dot .active {
+.slideshow-dots .active-dot {
   background-color: $primary-color-3;
 }
 
 .testimonial-stars {
-  margin-top: 0;
+  margin-top: 0.625rem;
   font-size: 10px;
   line-height: 12px;
+  width:5.5rem;
 }
 
 .testimonials hr {
-  margin-top: 3.688em;
+  margin-top: 2.4rem;
 }
 
 .testimonial-title {
   margin-top: 3em;
   font-size: calc(1.75rem / 5 * 4);
   line-height: calc(1.813rem / 5 * 4);
+}
+
+.testimonial-author-mt{
+  margin-top:2.813rem;
 }

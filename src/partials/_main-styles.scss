@@ -118,9 +118,14 @@ h3 {
 .testimonial-title {
   @include gordita-bold;
   font-size: calc(1.75rem / 5 * 4);
-  line-height: 1.74em;
+  line-height: 1.81em;
   color: $primary-color-3;
-  margin-top: 3rem;
+  margin-top: 2.5rem !important;
+}
+
+.testimonial-name{
+  @include gordita-bold;
+  line-height:1.75rem;
 }
 
 h5 {
@@ -147,7 +152,7 @@ h5 {
   @include gordita-light;
   font-size: calc(1.25rem / 5 * 4);
   line-height: calc(2.5rem / 5 * 4);
-  margin-top: 2.929em;
+  margin-top: 2.5rem;
 }
 
 h6 {
@@ -273,7 +278,7 @@ button {
 .flex-start {
   display: flex;
   justify-content: flex-start;
-}
+ }
 
 .btn-round {
   @include circular-std;

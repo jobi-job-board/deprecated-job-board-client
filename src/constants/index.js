@@ -68,10 +68,18 @@ export const testimonialData = [
   },
   {
     id: 3,
-    title: 'Incredible!s',
+    title: 'Incredible!',
     quote: `"This is absolutely unique and clean design that I'm looking for. Also, the code quality is great!"`,
     avatar: avatar,
     name: 'Sara Thompson',
+    location: 'San Francisco',
+  },
+  {
+    id: 4,
+    title: 'Fantastic!',
+    quote: `"This is absolutely unique and clean design that I'm looking for. Also, the code quality is great!"`,
+    avatar: avatar,
+    name: 'Matt Smith',
     location: 'San Francisco',
   },
 ];

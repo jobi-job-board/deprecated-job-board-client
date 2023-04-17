@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
-import { testimonialData } from "../constants";
-import quote from "../assets/icons/quote.png";
+import { useState, useEffect } from 'react';
+import { testimonialData } from '../constants';
+import quote from '../assets/icons/quote.png';
+import stars from '../assets/icons/rating.png';
 
 const timeDelay = 10000;
 
@@ -10,7 +11,9 @@ const Testimonials = () => {
   // useEffect(() => {
   //   setTimeout(() => {
   //     return setIndex((prevIndex) =>
-  //       prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1
+  //       prevIndex === testimonialData.length - 1
+  //         ? 0
+  //         : (prevIndex + 1) % testimonialData.length
   //     );
   //   }, timeDelay);
   //   return () => {};
@@ -29,7 +32,7 @@ const Testimonials = () => {
               <div
                 key={person.id}
                 className={`slideshow-dot ${
-                  index === personIndex ? "active" : ""
+                  index === personIndex ? 'active-dot' : ''
                 }`}
               ></div>
             ))}
@@ -39,15 +42,15 @@ const Testimonials = () => {
           <div className="slideshow">
             <ul
               className="slideshow-slider flex"
-              style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+              style={{ transform: `translate3d(${-index * 50}%, 0, 0)` }}
             >
               {testimonialData.map((person, index) => (
-                <li key={person.id} className="slide">
+                <li key={person.id} className="slide flex-col">
                   <h5 className="testimonial-title">{person.title}</h5>
-                  <p className="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</p>
+                  <img src={stars} className="testimonial-stars" alt="stars" />
                   <h6 className="testimonial-quote-h6">{person.quote}</h6>
                   <hr />
-                  <div className="flex-start">
+                  <div className="flex-start testimonial-author-mt">
                     <div className="testimonial-avatar">
                       <img
                         src={person.avatar}
@@ -56,7 +59,7 @@ const Testimonials = () => {
                       />
                     </div>
                     <div>
-                      <div>{person.name}</div>
+                      <div className="testimonial-name">{person.name}</div>
                       <div>{person.location}</div>
                     </div>
                     <div>
