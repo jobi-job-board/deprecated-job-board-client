@@ -2,32 +2,31 @@
 
 .blog h2 {
   text-align: center;
-  margin-bottom: 83px;
 }
 
 /* CSS */
 
 .blog-container {
-  display: flex;
-  flex-wrap: wrap;
   gap: 45px;
+  margin-top: 5.188em;
 }
 
-.col-one,
-.col-two,
-.col-three {
+.blog-col {
   width: 441px;
 }
 
 .date {
-  margin-bottom: 24px;
+  margin-top: 2.813em;
+  text-transform: uppercase;
+  line-height: calc(1.212rem / 5 * 4);
 }
 
-.blog button {
-  margin-top: 1.25em;
-}
-
-.blog img {
+.blog-image {
   width: 410px;
   height: 301px;
+  border-radius: 2px;
+}
+
+.blog .btn-outline-round:hover {
+  background-color: $primary-color-3;
 }

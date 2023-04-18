@@ -1,12 +1,13 @@
-import React from 'react';
-import logo from '../assets/logo.png';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import React from "react";
+import logo from "../assets/logo.png";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import blackSquare from "../assets/icons/black-square.png";
 
 const Footer = () => {
   return (
     <footer>
       <div className="wrapper">
-        <div className="footer-top flex ">
+        <div className="footer-top footer-top-wrapper flex ">
           <div className="footer-top-text flex-col">
             <h3 className="h3-footer">Most complete job portal.</h3>
             <p className="p-footer">
@@ -23,9 +24,9 @@ const Footer = () => {
             <li>
               <img src={logo} alt="Jobi logo" />
             </li>
-            <li>
+            <li className="email">
               <address>
-                <a href="mailto:jobisupport@company.com" className="underline">
+                <a href="mailto:jobisupport@company.com">
                   jobisupport@company.com
                 </a>
               </address>
@@ -49,10 +50,18 @@ const Footer = () => {
                 </li>
               </ul>
             </li>
-          </ul>
-          <ul className="footer-bottom-col-2 flex-col">
             <li>
-              <h5>Links</h5>
+              <img
+                src={blackSquare}
+                alt="Black square"
+                width={53}
+                className="black-square"
+              />
+            </li>
+          </ul>
+          <ul className="footer-bottom-col-2">
+            <li>
+              <h5 className="footer-header">Links</h5>
             </li>
             <li>
               <a href="#">Pricing</a>
@@ -67,9 +76,9 @@ const Footer = () => {
               <a href="#">Blog</a>
             </li>
           </ul>
-          <ul className="footer-bottom-col-3 flex-col">
+          <ul className="footer-bottom-col-3">
             <li>
-              <h5>Products</h5>
+              <h5 className="footer-header">Products</h5>
             </li>
             <li>
               <a href="#">Take the tour</a>
@@ -90,9 +99,9 @@ const Footer = () => {
               <a href="#">Reviews</a>
             </li>
           </ul>
-          <ul className="footer-bottom-col-4 flex-col">
+          <ul className="footer-bottom-col-4">
             <li>
-              <h5>Legal</h5>
+              <h5 className="footer-header">Legal</h5>
             </li>
             <li>
               <a href="#">Terms of use</a>
