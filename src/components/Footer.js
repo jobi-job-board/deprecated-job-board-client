@@ -1,7 +1,12 @@
-import React from "react";
-import logo from "../assets/logo.png";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import blackSquare from "../assets/icons/black-square.png";
+import React from 'react';
+import logo from '../assets/logo.png';
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import blackSquare from '../assets/icons/black-square.png';
+import {
+  footerLinksData,
+  footerProductsData,
+  footerLegalData,
+} from '../constants';
 
 const Footer = () => {
   return (
@@ -34,17 +39,29 @@ const Footer = () => {
             <li className="footer-social">
               <ul className="flex-footer">
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaFacebookF />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaTwitter />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaLinkedinIn />
                   </a>
                 </li>
@@ -63,58 +80,37 @@ const Footer = () => {
             <li>
               <h5 className="footer-header">Links</h5>
             </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Careers</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
+            {footerLinksData.map((item) => (
+              <li key={item.id}>
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  {item.title}
+                </a>
+              </li>
+            ))}
           </ul>
           <ul className="footer-bottom-col-3">
             <li>
               <h5 className="footer-header">Products</h5>
             </li>
-            <li>
-              <a href="#">Take the tour</a>
-            </li>
-            <li>
-              <a href="#">Live chat</a>
-            </li>
-            <li>
-              <a href="#">Self-service</a>
-            </li>
-            <li>
-              <a href="#">Mobile</a>
-            </li>
-            <li>
-              <a href="#">Collaboration</a>
-            </li>
-            <li>
-              <a href="#">Reviews</a>
-            </li>
+            {footerProductsData.map((item) => (
+              <li key={item.id}>
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  {item.title}
+                </a>
+              </li>
+            ))}
           </ul>
           <ul className="footer-bottom-col-4">
             <li>
               <h5 className="footer-header">Legal</h5>
             </li>
-            <li>
-              <a href="#">Terms of use</a>
-            </li>
-            <li>
-              <a href="#">Terms & conditions</a>
-            </li>
-            <li>
-              <a href="#">Privacy</a>
-            </li>
-            <li>
-              <a href="#">Cookie policy</a>
-            </li>
+            {footerLegalData.map((item) => (
+              <li key={item.id}>
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  {item.title}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -129,17 +125,29 @@ const Footer = () => {
         <div>
           <ul className="flex footer-copyright-socials">
             <li>
-              <a href="#">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn />
               </a>
             </li>

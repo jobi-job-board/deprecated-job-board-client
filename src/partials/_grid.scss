@@ -5,10 +5,12 @@ h2 .grid {
 }
 
 .grid-wrapper {
-  background-image: url(../assets/homepage-section/box.png);
-  width: 50% auto;
-  background-position: right;
-  margin: 5em auto 200px;
+
+
+  // width: 50%;
+
+  // margin: 5em auto 200px auto;
+  margin:0 auto;
 }
 
 .grid-box {
@@ -20,14 +22,18 @@ h2 .grid {
   height: 310px;
   border-radius: 5px;
   box-shadow: 0px 20px 50px #00132b09;
+  background-color: $white;
 }
 
 .grid {
+  background-image: url(../assets/homepage-section/grid-background.png);
+  background-position: 33% 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   background-position: center;
   background-size: cover;
+  padding: 9rem 0;
 }
 
 .circle {
