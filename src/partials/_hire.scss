@@ -8,6 +8,10 @@
   height: 711px;
 }
 
+.wrapper {
+  margin-top: 0;
+}
+
 .gap {
   gap: 147px;
 }
@@ -21,6 +25,8 @@
   border: 1px solid red;
   margin-top: 40px;
   height: 711px;
+  position: relative;
+  margin-top: 0;
 }
 
 .hire button {
@@ -54,4 +60,15 @@
 }
 hr {
   margin: 0;
+}
+
+.hire-input {
+  position: absolute;
+  top: -10px;
+  left: -90px;
+}
+
+.hire-input img {
+  height: 167px;
+  width: 570px;
 }

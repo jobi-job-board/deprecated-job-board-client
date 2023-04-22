@@ -4,13 +4,15 @@ h2 .grid {
   text-align: left;
 }
 
+.new-line {
+  margin-bottom: -12px;
+}
+
 .grid-wrapper {
-
-
-  // width: 50%;
-
-  // margin: 5em auto 200px auto;
-  margin:0 auto;
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 6.875em;
 }
 
 .grid-box {
@@ -18,45 +20,54 @@ h2 .grid {
   flex-direction: column;
   justify-content: center;
   padding-left: 1em;
-  width: 300px;
-  height: 310px;
-  border-radius: 5px;
-  box-shadow: 0px 20px 50px #00132b09;
+  // height: 310px;
+  border-radius: 10px;
   background-color: $white;
+  box-shadow: 0px 20px 50px rgba(10, 22, 37, 0.0356);
+  padding: 24px 36px;
+  padding-right: 0;
 }
 
 .grid {
   background-image: url(../assets/homepage-section/grid-background.png);
-  background-position: 33% 0;
+  background-position: 36% 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   background-position: center;
   background-size: cover;
-  padding: 9rem 0;
+  padding: 7.25rem 0;
+  padding-right: 4em;
+  margin-left: 4em;
 }
 
 .circle {
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 94px;
+  height: 94px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
-img.icon {
-  height: 23px;
-  width: 22px;
+.icon-line {
+  height: 32px;
+  width: 62px;
 }
 // .grid-box h4{
 //     margin-bottom:$p-margin-bottom
 //     }
 
+.grid .icon {
+  height: 27px;
+  width: 25px;
+}
+
 .green {
   background-color: $primary-color-3;
   border: 1px solid $primary-color-3;
+  color: $white;
 }
 
 .green .h4 {
@@ -67,7 +78,12 @@ img.icon {
   color: $white;
 }
 
-.green,
+.green p {
+  font-size: calc(1.438rem / 5 * 4);
+  line-height: calc(3.188rem / 5 * 4);
+  margin-top: 1.25em;
+}
+
 .circle-green {
   color: $white;
   border: 3px solid $white;
@@ -75,6 +91,7 @@ img.icon {
 
 .flex-space-evenly {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 0.5em;
 }

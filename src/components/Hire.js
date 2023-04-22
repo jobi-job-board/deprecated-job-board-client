@@ -2,6 +2,7 @@ import React from "react";
 import { peopleToHire, accordionData } from "../constants";
 import Accordion from "./Accordion";
 import HireCards from "./HireCards";
+import hireInputBox from "../assets/homepage-section/hire-input-box.png";
 
 const Hire = () => {
   return (
@@ -9,6 +10,9 @@ const Hire = () => {
       <div className="wrapper flex flex-50 gap">
         <div className="hire-left">
           <HireCards peopleToHire={peopleToHire} />
+          <div className="hire-input">
+            <img src={hireInputBox} alt="Input Box" />
+          </div>
         </div>
         <div className="hire-right">
           <p>FIND FREELANCER</p>

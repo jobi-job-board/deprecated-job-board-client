@@ -1,5 +1,9 @@
 @use "./variables" as *;
 
+.testimonials {
+  margin-top: 6.875rem;
+}
+
 .testimonials-left {
   width: 30%;
   // margin-right:293px;
@@ -39,7 +43,7 @@
 
 .slideshow {
   margin: 0 auto;
-  width:100%;
+  width: 100%;
   overflow: hidden;
   // margin-left: -200px;
   // display: block;
@@ -77,7 +81,7 @@
   margin-top: 0.625rem;
   font-size: 10px;
   line-height: 12px;
-  width:5.5rem;
+  width: 5.5rem;
 }
 
 .testimonials hr {
@@ -90,6 +94,6 @@
   line-height: calc(1.813rem / 5 * 4);
 }
 
-.testimonial-author-mt{
-  margin-top:2.813rem;
+.testimonial-author-mt {
+  margin-top: 2.813rem;
 }

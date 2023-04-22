@@ -1,20 +1,26 @@
-import bag from '../assets/icons/icon-bag.png';
-import box from '../assets/homepage-section/box.png';
-import code from '../assets/icons/icon-bag.png';
-import curved from '../assets/icons/curved-line.png';
-import pencil from '../assets/icons/icon-pencil.png';
-import phone from '../assets/icons/icon-phone.png';
-import video from '../assets/icons/icon-video.png';
-import { ArrowUpRight } from 'phosphor-react';
+import bag from "../assets/icons/icon-bag.png";
+import box from "../assets/homepage-section/box.png";
+import code from "../assets/icons/icon-bag.png";
+import curved from "../assets/icons/curved-line.png";
+import pencil from "../assets/icons/icon-pencil.png";
+import phone from "../assets/icons/icon-phone.png";
+import video from "../assets/icons/icon-video.png";
+import { ArrowUpRight } from "phosphor-react";
+import categoriesLink from "../assets/homepage-section/categories-link.png";
 
 const Grid = () => {
   return (
     <section class="job-categories">
-      <div className="wrapper">
-        <h2 className="left">
-          Most demanding job <span className="new-line">categories.</span>
-        </h2>
-        <div className="grid-wrapper">
+      <div className="">
+        <div className="flex grid-wrapper">
+          <h2 className="left">
+            Most demanding job <span className="new-line">categories.</span>
+          </h2>
+          <a href="#">
+            <img src={categoriesLink} alt="Categories link" />
+          </a>
+        </div>
+        <div className="">
           <div className="grid">
             <div className="grid-box flex-col">
               <div className="circle">
@@ -83,7 +89,7 @@ const Grid = () => {
               <h4 className="h4">13k+</h4>
               <p>Job already posted</p>
               <div className="flex-space-evenly">
-                <img className="icon" src={curved} alt="code" />
+                <img className="icon-line" src={curved} alt="code" />
                 <div className="circle circle-green">
                   <ArrowUpRight size={32} weight="bold" />
                 </div>

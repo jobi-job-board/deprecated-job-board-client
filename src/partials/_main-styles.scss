@@ -134,9 +134,9 @@ h5 {
   margin-top: 1.25em;
 }
 .regular {
-  @include gordita-regular;
+  @include gordita-bold;
   font-size: calc(1.375rem / 5 * 4);
-  line-height: calc(2.375rem / 5 * 4);
+  line-height: calc(2.125rem / 5 * 4);
   margin-top: 1.69em;
 }
 
