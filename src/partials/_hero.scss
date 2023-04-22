@@ -3,14 +3,14 @@
 .hero {
   background: url("../assets/homepage-section/hero-image.png") no-repeat;
   min-height: 550px;
-  background-position: center;
-  background-size: cover;
+  background-position: center !important;
+  background-size: cover !important;
   width: 100%;
-  // padding-top: 100px;
   position: relative;
+}
+.hero-inner{
   overflow-x: hidden;
 }
-
 .hero-col-left {
   width: 608px;
   color: $secondary-color-5;
@@ -26,12 +26,13 @@
   left: 55%;
   max-width: 500px;
   width: 100%;
+  padding-right:20px;
 }
 
 img.cards {
   position: absolute;
   bottom: 2em;
-  right: 5em;
+  right: 0;
   width: 20%;
 }
 
@@ -46,7 +47,7 @@ header.hero {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+
 }
 .curve {
   margin-bottom: -10px;
