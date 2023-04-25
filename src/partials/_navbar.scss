@@ -20,3 +20,39 @@ nav {
   margin-right: 30px;
   font-weight: 500;
 }
+@media screen and (max-width: 1300px) {
+  nav {
+    padding: 0rem 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navbar-menu li,
+  .navbar-buttons li {
+    margin-right: 0px;
+  }
+  .navbar-menu > * + *,
+  .navbar-buttons > * + * {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0rem 1rem;
+    padding-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-buttons {
+    flex-direction: row !important;
+  }
+  .btn-register {
+    padding: 0.645em 1.25em;
+  }
+  .navbar-logo {
+    img {
+      width: 100px;
+    }
+  }
+}

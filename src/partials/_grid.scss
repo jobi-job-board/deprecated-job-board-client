@@ -95,3 +95,37 @@ h2 .grid {
   align-items: center;
   margin-top: 0.5em;
 }
+@media screen and (max-width: 1400px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 840px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .job-categories {
+    .grid {
+      padding-left: 0px;
+      margin-left: 0px !important;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-top: 3rem;
+      h5 {
+        font-size: 15px;
+        line-height: unset;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .job-categories .flex {
+    > * + * {
+      margin-top: 3rem;
+    }
+    margin-top: 3rem;
+  }
+}

@@ -65,3 +65,16 @@
 .p-strong {
   font-size: calc(0.8rem / 5 * 4);
 }
+
+@media screen and (max-width: 480px) {
+  .hire-cards .flex {
+    flex-direction: row !important;
+  }
+  .hire-cards .flex {
+    padding-left: 5px;
+    padding-right: 5px;
+    p {
+      font-size: 10px;
+    }
+  }
+}

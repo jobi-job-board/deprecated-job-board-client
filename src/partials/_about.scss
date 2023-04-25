@@ -98,3 +98,47 @@
 .about {
   height: 783px;
 }
+
+@media screen and (max-width: 750px) {
+  .about-left {
+    height: unset;
+    width: 100%;
+  }
+  .overlap-group {
+    position: static;
+    height: unset;
+  }
+  .video-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image-1 {
+    left: unset;
+    right: 0px;
+    width: 100%;
+    height: unset;
+    position: static;
+    img {
+      width: 100%;
+    }
+  }
+  .overlap-group {
+    width: 100%;
+  }
+  .image-2,
+  .image-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-text {
+    width: 100%;
+  }
+  .about-text {
+    button {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}

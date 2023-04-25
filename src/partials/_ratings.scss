@@ -39,3 +39,32 @@
 .ratings-stars p {
   margin: 0;
 }
+@media screen and (max-width: 840px) {
+  .ratings {
+    margin-top: 1rem;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .ratings {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    > * {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ratings {
+    > *:first-child {
+      display: none;
+    }
+  }
+}

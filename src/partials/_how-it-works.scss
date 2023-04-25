@@ -56,3 +56,28 @@
   position: relative;
   border-bottom: 3px solid $primary-color-3;
 }
+
+@media screen and (max-width: 1400px) {
+  .grid-container-three {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wrapper.how-it-works {
+    margin-top: 5rem;
+  }
+  .wrapper.how-it-works h2:after,
+  .wrapper.how-it-works h2::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .grid-container-three {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .box {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}

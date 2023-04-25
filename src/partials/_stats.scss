@@ -12,3 +12,17 @@
 .stats .wrapper {
   margin-bottom: 72px;
 }
+@media screen and (max-width: 1400px) {
+  .stats {
+    .wrapper.flex {
+      > * + * {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .stats h3 {
+    font-size: 25px;
+  }
+}

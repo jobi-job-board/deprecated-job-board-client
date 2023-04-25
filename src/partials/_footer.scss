@@ -114,3 +114,33 @@ footer {
 .footer-top-wrapper {
   padding: 3.125em 0;
 }
+@media screen and (max-width: 840px) {
+  .flex-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .flex-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-copyright div {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  footer {
+    .wrapper {
+      margin-bottom: 1rem;
+    }
+  }
+  .footer-copyright {
+    margin-top: 10px;
+  }
+  .footer-copyright-socials {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+}

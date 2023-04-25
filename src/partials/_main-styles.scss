@@ -456,3 +456,68 @@ input::placeholder {
 .lh-small {
   line-height: 1.875rem;
 }
+
+@media screen and (max-width: 1400px) {
+  .wrapper.flex {
+    flex-direction: column;
+  }
+  .about-text {
+    min-width: 100%;
+  }
+  .hero-wrapper {
+    max-width: 1600px;
+    margin: 2em 2em;
+  }
+  .about-text {
+    text-align: center;
+    h2 {
+      text-align: center;
+    }
+    button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 40px;
+    line-height: unset;
+  }
+  .footer-top-wrapper {
+    flex-direction: column;
+    text-align: center;
+    .footer-top-text {
+      margin-bottom: 2rem;
+    }
+  }
+  .testimonials-left .h4 {
+    margin-top: 1rem;
+  }
+  .about-text {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .left {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .testimonials-left .h4 {
+    font-size: 20px;
+  }
+  .footer-top {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    > *:last-child {
+      button {
+        margin-right: 0px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  footer {
+    margin-top: 0px !important;
+  }
+}

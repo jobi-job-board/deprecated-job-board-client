@@ -11,3 +11,11 @@
 .title {
   cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+  .title {
+    flex-direction: row !important;
+    h6 {
+      margin-top: 0px;
+    }
+  }
+}

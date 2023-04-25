@@ -30,3 +30,20 @@
 .blog .btn-outline-round:hover {
   background-color: $primary-color-3;
 }
+@media screen and (max-width: 1400px) {
+  .blog-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blog-col {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .blog-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

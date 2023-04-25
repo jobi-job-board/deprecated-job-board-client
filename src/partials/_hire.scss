@@ -72,3 +72,42 @@ hr {
   height: 167px;
   width: 570px;
 }
+@media screen and (max-width: 1400px) {
+  .hire {
+    height: unset;
+    margin-top: 4rem;
+  }
+  .hire-right {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .hire-right {
+    width: 100%;
+  }
+  .hire-left,
+  .hire-img-div {
+    width: 100%;
+  }
+  .hire-input {
+    top: -10px;
+    left: unset;
+  }
+  .hire-img-div {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hire-input img {
+    width: 100%;
+  }
+  .hire-cards li {
+    width: 100%;
+    min-width: 100% !important;
+  }
+  .hire-img-div {
+    width: 100% !important;
+  }
+}
