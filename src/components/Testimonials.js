@@ -27,16 +27,6 @@ const Testimonials = () => {
           <h2>Clients loves jobi</h2>
           <h4 className="testimonials-left-rating h4">A+ Rating</h4>
           <p>Avg rating 4.8 makes us best market place</p>
-          <div className="slideshow-dots">
-            {testimonialData.map((person, personIndex) => (
-              <div
-                key={person.id}
-                className={`slideshow-dot ${
-                  index === personIndex ? 'active-dot' : ''
-                }`}
-              ></div>
-            ))}
-          </div>
         </div>
         <div className="testimonials-right">
           <div className="slideshow">
@@ -69,6 +59,16 @@ const Testimonials = () => {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="slideshow-dots">
+            {testimonialData.map((person, personIndex) => (
+              <div
+                key={person.id}
+                className={`slideshow-dot ${
+                  index === personIndex ? 'active-dot' : ''
+                }`}
+              ></div>
+            ))}
           </div>
         </div>
       </div>

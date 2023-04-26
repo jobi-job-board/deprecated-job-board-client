@@ -6,7 +6,7 @@
   background-position: center !important;
   background-size: cover !important;
   width: 100%;
-  position: relative;
+
 }
 .hero-inner {
   overflow-x: hidden;
@@ -20,10 +20,15 @@
   padding-right: 120px;
 }
 
+.hero-col-right{
+  position: relative;
+}
+
 .hero-image-female {
   position: absolute;
-  bottom: 5em;
+  bottom:-1em;
   left: 55%;
+  transform:rotate(-1deg);
   max-width: 500px;
   width: 100%;
   padding-right: 20px;

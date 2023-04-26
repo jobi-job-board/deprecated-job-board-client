@@ -1,9 +1,9 @@
-import women from "../assets/homepage-section/female.png";
-import cards from "../assets/homepage-section/cards.png";
-import curve from "../assets/homepage-section/curve.png";
-import trusted from "../assets/homepage-section/trusted.png";
+import women from '../assets/homepage-section/female.png';
+import cards from '../assets/homepage-section/cards.png';
+import curve from '../assets/homepage-section/curve.png';
+import trusted from '../assets/homepage-section/trusted.png';
 
-import Navbar from "./Navbar";
+import Navbar from './Navbar';
 const Hero = () => {
   return (
     <header className="hero">
@@ -30,8 +30,10 @@ const Hero = () => {
             Video Editing
           </p>
         </div>
-        <div className="hero-col-right"></div>
-        <img className="hero-image-female" src={women} alt="woman" />
+        <div className="hero-col-right">
+          {' '}
+          <img className="hero-image-female" src={women} alt="woman" />
+        </div>
         <div className="hero-image-details">
           <img className="cards" src={cards} alt="cards" />
           {/* <img className="trusted" src={trusted} alt="trusted by" /> */}

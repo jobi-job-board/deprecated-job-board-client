@@ -28,11 +28,14 @@
 /* Dots */
 .slideshow-dots {
   text-align: center;
+  display:flex;
+  margin-top:6.25em;
+  margin-left:-9.375em;
 }
 .slideshow-dot {
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 1.25em;
+  width: 1.25em;
   border-radius: 50%;
   cursor: pointer;
   margin: 15px 7px 0px;
@@ -44,8 +47,9 @@
 .slideshow {
   margin: 0 auto;
   width: 100%;
+  max-width:902px;
   overflow: hidden;
-  // margin-left: -200px;
+  margin-left: -100px;
   // display: block;
   height: 450px;
   margin-top: 7.125em;
@@ -71,6 +75,7 @@
   background-color: white;
   max-width: 483px;
   padding-bottom: 2.69rem;
+  padding-left:2em;
 }
 
 .slideshow-dots .active-dot {
