@@ -1,11 +1,16 @@
 @use "./variables" as *;
 
+.accordion {
+  width: 100%;
+}
+
 .open {
   display: block;
 }
 
 .content {
   display: none;
+  position: absolute;
 }
 
 .title {

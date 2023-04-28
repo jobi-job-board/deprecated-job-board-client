@@ -6,7 +6,6 @@
   background-position: center !important;
   background-size: cover !important;
   width: 100%;
-
 }
 .hero-inner {
   overflow-x: hidden;
@@ -20,15 +19,15 @@
   padding-right: 120px;
 }
 
-.hero-col-right{
+.hero-col-right {
   position: relative;
 }
 
 .hero-image-female {
   position: absolute;
-  bottom:-1em;
+  bottom: -1em;
   left: 55%;
-  transform:rotate(-1deg);
+  transform: rotate(-1deg);
   max-width: 500px;
   width: 100%;
   padding-right: 20px;
@@ -43,7 +42,7 @@ img.cards {
 
 .hero-image-details {
   position: relative;
-  left: 14%;
+  left: 9em;
   // left: 31em;
   bottom: 16em;
 }
@@ -54,7 +53,7 @@ header.hero {
   padding: 0;
 }
 .curve {
-  margin-bottom: -10px;
+  margin-bottom: 2px;
   margin-left: -10px;
   width: 100vw;
 }
@@ -94,9 +93,9 @@ header.hero {
     z-index: 9;
     transition: 0.3s ease all;
   }
-  .navbar-menu.active {
-    left: 0;
-  }
+  // .navbar-menu.active {
+  //   left: 0;
+  // }
   .navbar-menu li {
     margin-left: 0px;
   }

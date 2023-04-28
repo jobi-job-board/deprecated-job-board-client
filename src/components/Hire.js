@@ -7,7 +7,7 @@ import hireInputBox from "../assets/homepage-section/hire-input-box.png";
 const Hire = () => {
   return (
     <section className="hire">
-      <div className="wrapper flex flex-50 gap">
+      <div className="accordion-wrapper flex flex-50 gap">
         <div className="hire-left">
           <HireCards peopleToHire={peopleToHire} />
           <div className="hire-input">

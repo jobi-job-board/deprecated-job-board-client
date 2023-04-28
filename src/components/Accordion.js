@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RiArrowDropDownLine } from "react-icons/ri";
+import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
 const Accordion = ({ accordionData }) => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -14,10 +14,14 @@ const Accordion = ({ accordionData }) => {
     const open = index === activeIndex ? "open" : "";
 
     return (
-      <li key={item.id}>
+      <li className="accordion" key={item.id}>
         <div className="flex title" onClick={() => onTitleClick(index)}>
           <h6 className="about-text-h6  mt-30">{item.title}</h6>
-          <RiArrowDropDownLine />
+          {open === "open" && isOpen ? (
+            <RiArrowDropUpLine />
+          ) : (
+            <RiArrowDropDownLine />
+          )}
         </div>
         <div className={open === "open" && isOpen ? "open" : "content"}>
           <p className="mb-3">{item.content}</p>

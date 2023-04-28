@@ -28,14 +28,13 @@
 /* Dots */
 .slideshow-dots {
   text-align: center;
-  display:flex;
-  margin-top:6.25em;
-  margin-left:-9.375em;
+  display: flex;
+  margin-top: 6.25em;
 }
 .slideshow-dot {
   display: inline-block;
-  height: 1.25em;
-  width: 1.25em;
+  height: 8px;
+  width: 8px;
   border-radius: 50%;
   cursor: pointer;
   margin: 15px 7px 0px;
@@ -47,7 +46,7 @@
 .slideshow {
   margin: 0 auto;
   width: 100%;
-  max-width:902px;
+  max-width: 902px;
   overflow: hidden;
   margin-left: -100px;
   // display: block;
@@ -75,7 +74,7 @@
   background-color: white;
   max-width: 483px;
   padding-bottom: 2.69rem;
-  padding-left:2em;
+  padding-left: 2em;
 }
 
 .slideshow-dots .active-dot {
@@ -110,4 +109,12 @@
   .testimonials-right {
     margin-left: 0px;
   }
+}
+
+// Slider Test
+.slider-test {
+  height: 300px;
+  width: 500px;
+  background: red;
+  margin: 0 auto;
 }

@@ -4,7 +4,7 @@ import { blogData } from "../constants";
 const Blog = () => {
   return (
     <>
-      <div className="wrapper">
+      <div className="wrapper blog-wrapper">
         <section className="blog">
           <h2>Our Blog</h2>
           <ul className="blog-container flex">

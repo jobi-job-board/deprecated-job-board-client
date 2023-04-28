@@ -3,7 +3,7 @@ import React from "react";
 const Stats = () => {
   return (
     <section className="stats">
-      <div className="wrapper flex">
+      <div className="wrapper stats-wrapper flex">
         <div className="center">
           <h3>7million</h3>
           <p className="stats-small-text">Completed Jobs</p>

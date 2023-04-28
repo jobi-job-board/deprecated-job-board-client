@@ -18,15 +18,15 @@ nav {
   font-weight: 500;
 }
 
-.active:after {
-  content: "";
-  display: block;
-  position: relative;
-  border-bottom: 2px solid $primary-color-3;
-  width: 60%;
-  margin-top: 0.5em;
+// .active:after {
+//   content: "";
+//   display: block;
+//   position: relative;
+//   border-bottom: 2px solid $primary-color-3;
+//   width: 60%;
+//   margin-top: 0.5em;
 
-}
+// }
 
 .hamburger-icon {
   color: $primary-color-3;
@@ -35,7 +35,6 @@ nav {
   right: -2em;
   top: 0.2em;
   z-index: 10;
-
 }
 
 .hamburger {
@@ -50,14 +49,13 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   background-color: $white;
   position: fixed;
   height: 100vh;
   margin-top: 0;
   padding-left: 0;
-  transition: .5s;
-
+  transition: 0.5s;
 }
 
 .mobile-menu li {
@@ -66,15 +64,14 @@ nav {
 
 .none {
   display: none;
-
 }
 
-.nav-divider{
-  background-color:$secondary-color-5;
-  margin:3em auto;
-  margin-bottom:0;
-  height:2px;
-  width:20px;
+.nav-divider {
+  background-color: $secondary-color-5;
+  margin: 3em auto;
+  margin-bottom: 0;
+  height: 2px;
+  width: 20px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -101,19 +98,18 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .nav-menu{
+  .nav-menu {
     display: none;
   }
-  .navbar-buttons{
-    display:none;
+  .navbar-buttons {
+    display: none;
   }
-    .hamburger-icon {
-      display: block;
-    }
-
+  .hamburger-icon {
+    display: block;
   }
+}
 @media screen and (max-width: 480px) {
-   .navbar-buttons {
+  .navbar-buttons {
     flex-direction: row !important;
     display: none !important;
   }
@@ -128,7 +124,5 @@ nav {
     img {
       width: 100px;
     }
-
   }
 }
-

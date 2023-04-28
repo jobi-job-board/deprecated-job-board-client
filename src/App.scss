@@ -10,6 +10,8 @@
 @use "./partials/hire";
 @use "./partials/hire-cards";
 @use "./partials/accordion";
+@use "./partials/slick";
+@use "./partials/slick-theme";
 @use "./partials/testimonials";
 @use "./partials/footer";
 @use "./partials/blog";
@@ -23,4 +25,3 @@
 @use "./partials/post-job.scss";
 @use "./partials/pricing.scss";
 @use "./partials/register.scss";
-

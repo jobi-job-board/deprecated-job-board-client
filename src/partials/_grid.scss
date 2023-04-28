@@ -104,6 +104,12 @@ h2 .grid {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid-box {
+    padding: 0;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -111,7 +117,8 @@ h2 .grid {
     .grid {
       // padding-left: 0px;
       margin-left: 0px !important;
-      padding:0;
+      padding: 0;
+      padding: 1em;
       // padding-right: 1rem;
       // padding-left: 1rem;
       // padding-top: 3rem;
@@ -120,6 +127,30 @@ h2 .grid {
         line-height: unset;
         margin-top: 10px;
       }
+    }
+    .grid-wrapper {
+      flex-direction: column;
+      padding-bottom: 3em;
+    }
+    .grid-wrapper h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+    .green p {
+      font-size: 0.7rem;
+      line-height: 0.5rem;
+    }
+    .green h4 {
+      padding-top: 10px;
+      font-size: 2rem;
+    }
+    .icon-line {
+      height: 16px;
+      width: 41px;
+    }
+    .circle {
+      width: 47px;
+      height: 47px;
     }
   }
 

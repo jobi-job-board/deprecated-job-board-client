@@ -1,7 +1,7 @@
-import logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
-import { List } from 'phosphor-react';
-import { useState } from 'react';
+import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
+import { List } from "phosphor-react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [showHamburger, setShowHamburger] = useState(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
             <List />
           </div>
           <div className="mobile-menu">
-            <ul className={`mobile-nav-menu ${showHamburger ? '' : 'none'}`}>
+            <ul className={`mobile-nav-menu ${showHamburger ? "" : "none"}`}>
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -54,7 +54,7 @@ const Navbar = () => {
         </div>
         <div className="top-nav">
           <ul className="navbar-menu flex">
-            <li className="active">
+            <li>
               <Link to="/">Home</Link>
             </li>
             <li>
