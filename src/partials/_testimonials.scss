@@ -6,6 +6,7 @@
 
 .testimonials-left {
   width: 30%;
+  padding-bottom: 5em;
   // margin-right:293px;
 }
 
@@ -14,7 +15,7 @@
   background: url("../assets/icons/bg-green-testimonials.png") no-repeat;
   background-size: cover;
   height: 690px;
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
 .flex-start div:last-child {
@@ -46,35 +47,40 @@
 .slideshow {
   margin: 0 auto;
   width: 100%;
-  max-width: 902px;
+  max-width: 1200px;
+  // max-width: 902px;
   overflow: hidden;
-  margin-left: -100px;
+  margin-right: -10px;
   // display: block;
   height: 450px;
-  margin-top: 7.125em;
+  margin-top: 5.125em;
+  margin-left: -10px;
 }
 
 .slideshow-slider {
   // white-space: nowrap;
   transition: ease 1000ms;
-  gap: 53px;
-  margin-right: -400px;
-  width: 802px;
-  height: 420px;
+  margin-right: -600px;
+  // max-width: 802px;
+  height: auto;
 }
 
 .slide {
   display: flex;
   flex: 0 0 calc(50% - 16px);
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   // display: inline-block;
   // overflow-wrap: break-word;
-  width: 100%;
+  width: 90% !important;
   border-radius: 2px;
   background-color: white;
   max-width: 483px;
-  padding-bottom: 2.69rem;
-  padding-left: 2em;
+  // max-width: 500px;
+  // padding-bottom: 2.69rem;
+  // padding-left: 2em;
+  padding: 0;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
 }
 
 .slideshow-dots .active-dot {
@@ -89,7 +95,7 @@
 }
 
 .testimonials hr {
-  margin-top: 2.4rem;
+  margin-top: 1.5rem;
 }
 
 .testimonial-title {
@@ -99,7 +105,8 @@
 }
 
 .testimonial-author-mt {
-  margin-top: 2.813rem;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
 }
 @media screen and (max-width: 1400px) {
   .testimonials-left,
@@ -112,9 +119,12 @@
 }
 
 // Slider Test
-.slider-test {
-  height: 300px;
-  width: 500px;
-  background: red;
+.carousel {
+  width: 100%;
+  background: transparent;
   margin: 0 auto;
+}
+
+.carousel div {
+  // margin-right: -50px;
 }

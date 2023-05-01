@@ -11,6 +11,8 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 768,
@@ -21,7 +23,7 @@ const Carousel = () => {
     ],
   };
   return (
-    <div className="slider-test">
+    <div className="carousel">
       <Slider {...settings}>
         {testimonialData.map((person, index) => (
           <li key={person.id} className="slide flex-col">
