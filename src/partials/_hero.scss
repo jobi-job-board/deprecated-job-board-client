@@ -1,7 +1,7 @@
-@use "./variables" as *;
+@use './variables' as *;
 
 .hero {
-  background: url("../assets/homepage-section/hero-image.png") no-repeat;
+  background: url('../assets/homepage-section/hero-image.png') no-repeat;
   min-height: 550px;
   background-position: center !important;
   background-size: cover !important;
@@ -128,6 +128,9 @@ header.hero {
 @media screen and (max-width: 750px) {
   .hero-col-left {
     width: 100%;
+  }
+  .hero-col-left p {
+    margin-top: 1em;
   }
 }
 

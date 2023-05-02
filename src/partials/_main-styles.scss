@@ -1,4 +1,4 @@
-@use "./variables" as *;
+@use './variables' as *;
 
 //Main Styles
 html {
@@ -34,6 +34,11 @@ p {
   width: 90%;
   max-width: 1600px;
   margin: 6.875em auto;
+}
+.testimonial-wrapper {
+  width: 90%;
+  max-width: 1600px;
+  margin: 6.875em 0 6.875em auto;
 }
 
 .nav-wrapper {
@@ -250,11 +255,6 @@ p {
 .icon-1 {
   margin-top: 4.4375em;
 }
-
-// .icon-2 {
-//   height:2.63em;
-//   width:2.63em;
-// }
 
 .icon-3 {
   margin-top: 2.375em;

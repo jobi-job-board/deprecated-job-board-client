@@ -1,6 +1,6 @@
 // const timeDelay = 10000;
 
-import Carousel from "./Carousel";
+import Carousel from './Carousel';
 
 const Testimonials = () => {
   // const [index, setIndex] = useState(0);
@@ -18,7 +18,7 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials">
-      <div className="wrapper flex">
+      <div className="testimonial-wrapper flex">
         <div className="testimonials-left">
           <p className="small">TESTIMONIAL</p>
           <h2>Clients loves jobi</h2>
