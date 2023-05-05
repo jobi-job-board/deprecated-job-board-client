@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logoLight from "../assets/homepage-section/logo-light.png";
 import { Link } from "react-router-dom";
 import { List } from "phosphor-react";
 import { useState } from "react";
@@ -7,10 +7,10 @@ const Navbar = () => {
   const [showHamburger, setShowHamburger] = useState(false);
   return (
     <div>
-      <nav className="nav">
+      <nav className="nav-light">
         <div className="navbar-logo">
           <Link to="/">
-            <img src={logo} alt="Company logo" />
+            <img src={logoLight} alt="Company logo" />
           </Link>
         </div>
         {/* mobile nav */}
@@ -38,6 +38,11 @@ const Navbar = () => {
               <li>
                 <Link to="/">Pages</Link>
                 <div className="nav-divider"></div>
+              </li>
+              <li>
+                <a href="#" className="login">
+                  Post Job
+                </a>
               </li>
               <li>
                 <a href="#" className="login">
@@ -73,13 +78,18 @@ const Navbar = () => {
         </div>
         <ul className="navbar-buttons flex">
           <li>
-            <a href="#" className="login">
+            <a href="#" className="login post-job">
+              Post Job
+            </a>
+          </li>
+          <li>
+            <a href="#" className="login" id="login-button">
               Login
             </a>
           </li>
           <li>
             <a href="#" className="btn-register">
-              Register
+              Hire Top Talents
             </a>
           </li>
         </ul>

@@ -14,6 +14,7 @@
 @use "./partials/slick-theme";
 @use "./partials/testimonials";
 @use "./partials/footer";
+@use "./partials/register.scss";
 @use "./partials/blog";
 @use "./partials/candidate-profile";
 @use "./partials/company-view";
@@ -24,4 +25,3 @@
 @use "./partials/page404.scss";
 @use "./partials/post-job.scss";
 @use "./partials/pricing.scss";
-@use "./partials/register.scss";
