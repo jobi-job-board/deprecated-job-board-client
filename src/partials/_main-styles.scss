@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 //Main Styles
 html {
@@ -35,6 +35,11 @@ p {
   max-width: 1600px;
   margin: 6.875em auto;
 }
+.header-secondary-wrapper {
+  width: 100%;
+  max-width: 1600px;
+}
+
 .testimonial-wrapper {
   width: 90%;
   max-width: 1600px;
@@ -50,6 +55,7 @@ p {
 .hero-wrapper {
   max-width: 1600px;
   margin: 4em 8.75em;
+  margin-bottom: 0px;
 }
 
 ul {
@@ -467,6 +473,7 @@ input::placeholder {
   .hero-wrapper {
     max-width: 1600px;
     margin: 2em 2em;
+    margin-bottom: 0px;
   }
   .about-text {
     text-align: center;

@@ -1,7 +1,7 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 .hero {
-  background: url('../assets/homepage-section/hero-image.png') no-repeat;
+  background: url("../assets/homepage-section/hero-image.png") no-repeat;
   min-height: 550px;
   background-position: center !important;
   background-size: cover !important;
@@ -25,7 +25,7 @@
 
 .hero-image-female {
   position: absolute;
-  bottom: -1em;
+  bottom: 0px;
   left: 55%;
   transform: rotate(-1deg);
   max-width: 500px;
@@ -51,12 +51,14 @@ header.hero {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 .curve {
-  margin-bottom: 2px;
+  margin-bottom: -4px;
   margin-left: -10px;
   width: 100vw;
 }
+
 @media screen and (max-width: 1300px) {
   .hero-image-details,
   .hero-image-female,

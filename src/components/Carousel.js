@@ -4,7 +4,7 @@ import quote from "../assets/icons/quote.png";
 import stars from "../assets/icons/rating.png";
 import React from "react";
 
-const Carousel = () => {
+const Carousel = ({ Width }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -26,7 +26,7 @@ const Carousel = () => {
     <div className="carousel">
       <Slider {...settings}>
         {testimonialData.map((person, index) => (
-          <li key={person.id} className="slide flex-col">
+          <li key={person.id} className="slide  flex-col" data-width={Width}>
             <h5 className="testimonial-title">{person.title}</h5>
             <img src={stars} className="testimonial-stars" alt="stars" />
             <h6 className="testimonial-quote-h6">{person.quote}</h6>

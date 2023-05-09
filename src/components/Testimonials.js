@@ -1,9 +1,10 @@
 // const timeDelay = 10000;
 
-import Carousel from './Carousel';
+import { useEffect, useState } from "react";
+import Carousel from "./Carousel";
 
 const Testimonials = () => {
-  // const [index, setIndex] = useState(0);
+  const [Width, setWidth] = useState(480);
 
   // useEffect(() => {
   //   setTimeout(() => {
@@ -15,6 +16,21 @@ const Testimonials = () => {
   //   }, timeDelay);
   //   return () => {};
   // }, [index]);
+  const HandleResizeWork = () => {
+    let WindowWidth = window.innerWidth;
+    if (WindowWidth <= 680) {
+      setWidth(WindowWidth);
+      let slickSlide = document.querySelectorAll(".slick-slide > div");
+
+      slickSlide.forEach((EachSlide) => {
+        EachSlide.style.width = `${WindowWidth - 70}px`;
+      });
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("resize", HandleResizeWork);
+    HandleResizeWork();
+  }, []);
 
   return (
     <section className="testimonials">
@@ -31,7 +47,7 @@ const Testimonials = () => {
               className="slideshow-slider flex"
               // style={{ transform: `translate3d(${-index * 50}%, 0, 0)` }}
             >
-              <Carousel />
+              <Carousel Width={Width} />
             </ul>
           </div>
           <div className="slideshow-dots">
