@@ -10,7 +10,7 @@ import blog3 from '../assets/blog-images/blog-3.png';
 export const peopleToHire = [
   {
     id: 1,
-    name: 'Antonio Volaska',
+    name: 'Antonio Voåaska',
     job: 'UI Designer',
     from: 'California',
     avatar: hire1,
