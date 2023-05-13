@@ -1,6 +1,6 @@
-import logo from './assets/logo.png';
-import firebase from './firebase';
-// Assets
+// import logo from './assets/logo.png';
+// import firebase from './firebase';
+// // Assets
 import './App.scss';
 
 import 'slick-carousel/slick/slick.css';
