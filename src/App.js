@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './assets/logo.png';
+// import firebase from './firebase';
+// // Assets
+import './App.scss';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import { Routes, Route } from 'react-router-dom';
+// Pages
+import Home from './components/Home';
+import Register from './components/Register';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="App" style={{ marginBottom: "500px" }}>
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/register" element={<Register />}></Route>
+    </Routes>
+    // </div>
   );
 }
 
